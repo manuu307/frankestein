@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carolina's chat</title>
+</head>
+<body>
+    <div style="display: flex;flex-direction:column;width: 30vw;height: 20vh;justify-content: space-around;">
+        <!-- message sent -->
+        <input type="text" id="username" value="Carolina">
+        <input type="text" id="message" placeholder="Escribe tu mensaje aquí">
+        <!-- message received -->
+        <textarea type="textarea" id="my-messages"></textarea>  
+        <input type="submit" value="Send" onclick="send()">
+</div>
+<script>
+    function send() {
+        // get the username
+        var username = document.getElementById('username').value;
+        // get the message
+        var message = document.getElementById('message').value;
+        // fetch a post request to the server with the message and the username
+        fetch('http://192.168.1.2:5000/message', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username: username,
+                message: message,
+            })
+        })
+    }
+    
+</script>
+</body>
+</html>

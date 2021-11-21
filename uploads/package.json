@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-_coderhouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "scss": "node-sass --include-path scss css/style.scss css/stylescss.css",
+    "scssWatch": "node-sass --include-path scss css/style.scss css/stylescss.css --watch --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarolinaTP/Proyecto-CoderHouse.git"
+  },
+  "author": "Eliana Carolina Tapia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarolinaTP/Proyecto-CoderHouse/issues"
+  },
+  "homepage": "https://github.com/CarolinaTP/Proyecto-CoderHouse#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.14"
+  }
+}

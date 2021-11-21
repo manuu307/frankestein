@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- create a form to upload files-->
+    <form action="/files" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+    <script>
+        function sendFile() {
+            var file = document.getElementById('file').files[0];
+            var formData = new FormData();
+            formData.append('file', file);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://5d06-2800-a4-29a5-2a00-c982-74de-a4ef-da4.ngrok.io/files');
+            xhr.send(formData);
+        }
+    </script>
+</body>
+</html>

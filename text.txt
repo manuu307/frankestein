@@ -1,0 +1,24 @@
+
+In today’s blog post you are going to learn how to perform face recognition in both images and video streams using:
+
+OpenCV
+Python
+Deep learning
+As we’ll see, the deep learning-based facial embeddings we’ll be using here today are both (1) highly accurate and (2) capable of being executed in real-time.
+
+To learn more about face recognition with OpenCV, Python, and deep learning, just keep reading!
+
+Update July 2021: Added alternative face recognition methods section, including both deep learning-based and non-deep learning-based approaches.
+
+Looking for the source code to this post?
+JUMP RIGHT TO THE DOWNLOADS SECTION 
+Face recognition with OpenCV, Python, and deep learning
+Inside this tutorial, you will learn how to perform facial recognition using OpenCV, Python, and deep learning.
+
+We’ll start with a brief discussion of how deep learning-based facial recognition works, including the concept of “deep metric learning.”
+
+From there, I will help you install the libraries you need to actually perform face recognition.
+
+Finally, we’ll implement face recognition for both still images and video streams.
+
+As we’ll discover, our face recognition implementation will be capable of running in real-time.
